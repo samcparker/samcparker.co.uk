@@ -48,15 +48,24 @@
       <nuxt />
     </v-main>
     <v-divider></v-divider>
-    <v-footer style="background-color: rgba(0, 0, 0, 0)">
-      <v-container style="max-width: 1200px">
-        <v-row class="mx-0 flex-column">
-          <img style="width: 50px; height: 50px" src="/logo.png" alt="">
-          <p class="mt-3 mb-2" style="font-size: 10px">Website designed and coded by myself. Source: <v-btn target="_blank" href="https://www.github.com/samcparker/samcparker.co.uk" class="ml-1" x-small color="primary"><v-icon x-small>mdi-github</v-icon>Github</v-btn></p>
-          <p >
-            &copy Sam C. Parker 2020
-          </p>
-        </v-row>
+    <v-footer class="py-5" style="background-color: rgba(0, 0, 0, 0)">
+      <v-container style="max-width: 1200px" fill-height>
+        <v-col md="6" cols="12">
+          <p class="">Contact Info</p>
+          <a target="_blank" href="mailto:samcparker@protonmail.com"><p class="" style="font-size: 12px; color: white">samcparker@protonmail.com <v-icon small>mdi-email</v-icon></p></a>
+          <a target="_blank" href="https://www.linkedin.com/in/sam-parker-46859719a/" ><p class="" style="font-size: 12px; color: white">Sam Parker <v-icon small>mdi-linkedin</v-icon></p></a>
+        </v-col>
+        <v-col md="6" cols="12">
+
+          <v-row class="mx-0 flex-column" align="end">
+          
+            <img align="end" justify="end" class="mb-3" style="width: 50px; height: 50px" src="/logo.png" alt="">
+            <p class="my-3 text-right" style="font-size: 12px">Website designed and coded by myself.<v-btn target="_blank" href="https://www.github.com/samcparker/samcparker.co.uk" class="ml-1" x-small color="primary"><v-icon left x-small>mdi-code-tags</v-icon>code</v-btn></p>
+            <p class="text-right" >
+              &copy Sam C. Parker 2020
+            </p>
+          </v-row>
+        </v-col>
       </v-container>
     </v-footer>
   </v-app>
@@ -126,4 +135,8 @@ export default {
     font-weight: 500;
     font-size: 30px;
   }
+
+a { color:white; text-decoration: none; }
+a:hover { color:white; }
+a:active {color: white}
 </style>
