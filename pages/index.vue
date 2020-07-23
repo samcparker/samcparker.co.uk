@@ -58,7 +58,6 @@
 export default {
   async asyncData({ $content }) {
     const websites = await $content("", {deep: true}).where({dir: "/websites"}).sortBy("createdAt", "asc").fetch();
-    console.log(websites);
     return { websites };
   },
   data() {
@@ -76,10 +75,9 @@ export default {
     }
   },
   mounted() {
-    this.screenHeight = screen.height * 0.9;
+    this.screenHeight = screen.height;
     window.onresize = () => {
-      this.screenHeight = screen.height * 0.9;
-      console.log(this.screenHeight);
+      this.screenHeight = screen.height;
     };
   },
   components: {

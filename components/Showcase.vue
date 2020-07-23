@@ -52,11 +52,7 @@ export default {
             type: Object
         }
     },
-    mounted() {
-        this.$nextTick(function() {
-            console.log(this.data);
-        });
-    }
+
 }
 </script>
 

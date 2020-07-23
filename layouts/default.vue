@@ -14,7 +14,7 @@
       </div>
       <v-app-bar-nav-icon class="hidden-md-and-up" @click="drawer = !drawer"></v-app-bar-nav-icon>
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" right dark app color="#121212">
+    <v-navigation-drawer v-model="drawer" right dark app color="#121212" :disable-resize-watcher="true">
       <v-list>
         <v-list-item class="mt-5" link href="#work">
           <v-list-item-avatar tile>
@@ -47,6 +47,18 @@
     <v-main>
       <nuxt />
     </v-main>
+    <v-divider></v-divider>
+    <v-footer style="background-color: rgba(0, 0, 0, 0)">
+      <v-container style="max-width: 1200px">
+        <v-row class="mx-0 flex-column">
+          <img style="width: 50px; height: 50px" src="/logo.png" alt="">
+          <p class="mt-3 mb-2" style="font-size: 10px">Website designed and coded by myself. Source: <v-btn target="_blank" href="https://www.github.com/samcparker/samcparker.co.uk" class="ml-1" x-small color="primary"><v-icon x-small>mdi-github</v-icon>Github</v-btn></p>
+          <p >
+            &copy Sam C. Parker 2020
+          </p>
+        </v-row>
+      </v-container>
+    </v-footer>
   </v-app>
 </template>
 
