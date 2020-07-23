@@ -5,8 +5,8 @@
         <div>
             <h3 class="text-center mb-2">{{ data.name }}
                 <span>
-                    <v-btn target="_blank" :href="data.github" color="black" fab small><v-icon>mdi-github</v-icon></v-btn>
-                    <v-btn target="_blank" :href="data.href" color="black" fab small ><v-icon>mdi-link-variant</v-icon></v-btn>
+                    <v-btn target="_blank" :href="data.github" color="black" small><v-icon left>mdi-code-tags</v-icon>Code</v-btn>
+                    <v-btn target="_blank" :href="data.href" color="black" small ><v-icon left>mdi-web</v-icon> Link</v-btn>
                 </span>
             </h3>
             <p class="px-3">
@@ -32,7 +32,7 @@
         <v-img :src="require('~/static/' + data.img)" >
             <v-row style="height: 100%;" class="mx-0 pa-2" align="end" justify="end">
                 <v-btn fab small color="black">
-                <v-icon>mdi-link-variant</v-icon>
+                <v-icon>mdi-web</v-icon>
                 </v-btn>
             </v-row>
             
