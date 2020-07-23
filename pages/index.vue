@@ -8,7 +8,7 @@
               <p>I take beautiful designs and turn them into fully functional websites.</p>
               <v-row class="mx-0" style="max-width: 500px">
                 <v-col class="px-0 pr-2" cols="6">
-                  <v-btn width="100%" color="primary" href="#work" tile>See Work</v-btn>
+                  <v-btn width="100%" color="primary" href="#work" tile >See Work</v-btn>
                 </v-col>
                 <v-col class="px-0 pl-2" cols="6">
                   <v-btn width="100%" color="primary" href="#contact" outlined tile>Contact Me</v-btn>
