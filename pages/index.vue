@@ -19,6 +19,8 @@
                     <v-btn width="100%" color="white" href="#contact" outlined tile>Contact Me</v-btn>
                   </v-col>
                 </v-row>
+
+                <!-- TODO: Show user they can scroll down somehow -->
             </v-container>
           </v-col>
         </v-row>

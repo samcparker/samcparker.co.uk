@@ -16,7 +16,7 @@
     </v-app-bar>
     <v-navigation-drawer v-model="drawer" right dark app color="#121212" :disable-resize-watcher="true">
       <v-list>
-        <v-list-item class="mt-5" link href="#work">
+        <v-list-item class="mt-5" link href="#">
           <v-list-item-avatar tile>
               <img src="/logo.png">
             </v-list-item-avatar>
