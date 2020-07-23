@@ -21,6 +21,7 @@
                 </v-row>
 
                 <!-- TODO: Show user they can scroll down somehow -->
+                <!-- TODO: resize images so they load quicker -->
             </v-container>
           </v-col>
         </v-row>
