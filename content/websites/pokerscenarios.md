@@ -1,6 +1,6 @@
 ---
 name: Poker Scenarios
-img: pokerscenarios.png
+img: rsz_pokerscenarios.png
 description: Poker training app which allows the user to train their poker skills. Includes a functioning authentication system with front-end validation using Firebase.
 href: https://pokerscenarios.netlify.app
 github: https://www.github.com/samcparker/pokerscenarios

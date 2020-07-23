@@ -78,9 +78,10 @@ export default {
     }
   },
   mounted() {
-    this.screenHeight = screen.height;
+    var factor = 0.9;
+    this.screenHeight = screen.height * factor;
     window.onresize = () => {
-      this.screenHeight = screen.height;
+      this.screenHeight = screen.height * factor;
     };
   },
   components: {
