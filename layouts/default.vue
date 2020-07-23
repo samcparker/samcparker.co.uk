@@ -1,6 +1,6 @@
 <template>
   <v-app dark>
-    <v-app-bar style="background-color: rgb(0, 0, 0, 0); opacity: 0.5" tile elevation="0" fixed inverted-scroll >
+    <v-app-bar style="background-color: rgb(0, 0, 0, 0);" class="hoveropacity" tile elevation="0" fixed inverted-scroll >
       <v-img style="max-width: 50px; max-height: 50px"  src="/logo.png"></v-img>
       <v-toolbar-title class="tb pl-4" >Sam C. Parker</v-toolbar-title>
       <v-spacer></v-spacer>
@@ -23,6 +23,15 @@ export default {
 </script>
 
 <style>
+  .hoveropacity {
+    opacity: 0.5;
+    transition: transform 610ms, opacity 610ms;
+  }
+
+  .hoveropacity:hover {
+    opacity: 1;
+  }
+
   html {
     scroll-behavior: smooth;
   }

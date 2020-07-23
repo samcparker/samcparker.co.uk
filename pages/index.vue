@@ -30,7 +30,7 @@
       <v-container style="max-width: 1200px">
         <h2>My Work</h2>
           <p class="mb-10">Check out some of my previous work.</p>
-        <div v-for="(web, index) in websites" :key="index">
+        <div class="px-5" v-for="(web, index) in websites" :key="index">
           <showcase :data="web" />
           <v-divider class="mt-10 mb-10"></v-divider>
         </div>
@@ -41,7 +41,7 @@
       <v-container class="py-15" style="max-width: 1200px; ">
         <h2>Contact Me</h2>
         <p class="mb-10">Want a website or looking to hire? I would love to hear from you.</p>
-        <contact-form/>
+        <contact-form class="px-5" />
       </v-container>
     </section>
   </v-container>
