@@ -1,24 +1,22 @@
 <template>
   <v-container >
     <section id="landing">
-      <v-container style="max-width: 1200px; height: 1000px" fill-height class="main-con">
+      <v-container :style="style" fill-height class="main-con">
         <v-row class="mx-0">
           <v-col class="px-0">
             <v-container>
               <v-row class="mx-0 mb-3" align="center">
                 <v-img style="max-width: 50px; height: 50px" src="/logo.png" class="mr-3"></v-img>
-                  <h1 class="">Sam C. Parker</h1>
+                  <h1 class="" style="width: 100%; word-wrap: break-word;">Sam C. Parker</h1>
               </v-row>
 
                 <p class="mb-5">I take beautiful designs and turn them into fully functional websites.</p>
-                <v-row class="mx-0" style="max-width: 500px" id="scroll-target">
+                <v-row class="mx-0" style="max-width: 375px" id="scroll-target">
                   <v-col class="px-0 pr-2" cols="6">
                     <v-btn width="100%" color="primary" href="#work" tile >See Work</v-btn>
                   </v-col>
                   <v-col class="px-0 pl-2" cols="6">
                     <v-btn width="100%" color="white" href="#contact" outlined tile>Contact Me</v-btn>
-                    
-
                   </v-col>
                 </v-row>
             </v-container>
@@ -62,6 +60,27 @@ export default {
     const websites = await $content("", {deep: true}).where({dir: "/websites"}).sortBy("createdAt", "asc").fetch();
     console.log(websites);
     return { websites };
+  },
+  data() {
+    return {
+      screenHeight: null,
+
+    }
+  },
+  computed: {
+    style() {
+      return {
+        maxWidth: "1200px",
+        height: this.screenHeight + "px",
+      }
+    }
+  },
+  mounted() {
+    this.screenHeight = screen.height * 0.9;
+    window.onresize = () => {
+      this.screenHeight = screen.height * 0.9;
+      console.log(this.screenHeight);
+    };
   },
   components: {
   }

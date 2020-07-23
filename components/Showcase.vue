@@ -1,27 +1,12 @@
 <template>
     <v-row class="mx-0">
-    <v-col md="6" cols="12" order="last" class="px-0">
-        <v-row justify="end" class="mx-0">
-            <a target="_blank" :href="data.href" class="image">
-
-        <v-img :src="require('~/static/' + data.img)" >
-            <v-row style="height: 100%;" class="mx-0 pa-2" align="end" justify="end">
-                <v-btn fab small>
-                <v-icon>mdi-link-variant</v-icon>
-                </v-btn>
-            </v-row>
-            
-        </v-img>
-            </a>
-        </v-row>
-    </v-col>
-    <v-col class="px-0" md="6" cols="12" order="first">
+    <v-col class="px-0" md="6" cols="12">
         <v-container class="px-0" fill-height>
         <div>
             <h3 class="text-center mb-2">{{ data.name }}
                 <span>
-                    <v-btn target="_blank" :href="data.github" fab small><v-icon>mdi-github</v-icon></v-btn>
-                    <v-btn target="_blank" :href="data.href" fab small ><v-icon>mdi-link-variant</v-icon></v-btn>
+                    <v-btn target="_blank" :href="data.github" color="black" fab small><v-icon>mdi-github</v-icon></v-btn>
+                    <v-btn target="_blank" :href="data.href" color="black" fab small ><v-icon>mdi-link-variant</v-icon></v-btn>
                 </span>
             </h3>
             <p class="px-3">
@@ -39,6 +24,21 @@
             </v-row>
         </div>
         </v-container>
+    </v-col>
+    <v-col md="6" cols="12" class="px-0">
+        <v-row justify="end" class="mx-0">
+            <a target="_blank" :href="data.href" class="image">
+
+        <v-img :src="require('~/static/' + data.img)" >
+            <v-row style="height: 100%;" class="mx-0 pa-2" align="end" justify="end">
+                <v-btn fab small color="black">
+                <v-icon>mdi-link-variant</v-icon>
+                </v-btn>
+            </v-row>
+            
+        </v-img>
+            </a>
+        </v-row>
     </v-col>
     </v-row>
 
