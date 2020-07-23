@@ -1,10 +1,14 @@
 <template>
-  <v-container>
-    <v-container style="max-width: 1200px; height: 800px" fill-height>
+  <v-container >
+    <v-container style="max-width: 1200px; height: 800px" fill-height class="main-con">
       <v-row class="mx-0">
-        <v-col>
+        <v-col class="px-0">
           <v-container>
-              <h1 class="mb-5">Sam C. Parker</h1>
+            <v-row class="mx-0" align="center">
+              <v-img style="max-width: 50px; height: 50px" src="/logo.png" class="mr-3"></v-img>
+                <h1 class="">Sam C. Parker</h1>
+            </v-row>
+
               <p>I take beautiful designs and turn them into fully functional websites.</p>
               <v-row class="mx-0" style="max-width: 500px">
                 <v-col class="px-0 pr-2" cols="6">
@@ -41,11 +45,15 @@
   </v-container>
 </template>
 
+<style >
+.main-con {
+  background: url("/signature-lo.png") no-repeat;
+  background-size:contain;
+  background-position: center;
+}
+</style>
+
 <script>
-import Logo from '~/components/Logo.vue'
-import VuetifyLogo from '~/components/VuetifyLogo.vue'
-
-
 
 export default {
   async asyncData({ $content }) {
@@ -54,8 +62,6 @@ export default {
     return { websites };
   },
   components: {
-    Logo,
-    VuetifyLogo
   }
 }
 </script>
