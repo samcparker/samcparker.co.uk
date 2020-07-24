@@ -60,7 +60,7 @@
           <v-row class="mx-0 flex-column" align="end">
           
             <img align="end" justify="end" class="mb-3" style="width: 50px; height: 50px" src="/logo.png" alt="">
-            <p class="my-3 text-right" style="font-size: 12px">Website designed and coded by myself.<v-btn target="_blank" href="https://www.github.com/samcparker/samcparker.co.uk" class="ml-1" x-small color="primary"><v-icon left x-small>mdi-code-tags</v-icon>code</v-btn></p>
+            <p class="my-3 text-right" style="font-size: 12px">Website designed and coded by myself<v-btn target="_blank" href="https://www.github.com/samcparker/samcparker.co.uk" class="ml-1" x-small color="primary"><v-icon left x-small>mdi-code-tags</v-icon>code</v-btn></p>
             <p class="text-right" >
               &copy Sam C. Parker 2020
             </p>
