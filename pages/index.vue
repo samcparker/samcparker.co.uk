@@ -10,7 +10,7 @@
                   <h1 class="" style="width: 100%; word-wrap: break-word;">Sam C. Parker</h1>
               </v-row>
 
-                <p class="mb-5">I take beautiful designs and turn them into fully functional websites.</p>
+                <p class="mb-5">I take great ideas and turn them into functional websites.</p>
                 <v-row class="mx-0" style="max-width: 375px" id="scroll-target">
                   <v-col class="px-0 pr-2" cols="6">
                     <v-btn width="100%" color="primary" href="#work" tile >See Work</v-btn>
@@ -19,9 +19,15 @@
                     <v-btn width="100%" color="white" href="#contact" outlined tile>Contact Me</v-btn>
                   </v-col>
                 </v-row>
+                <v-row justify="center">
+                  <!-- <p>Scroll Down</p> -->
+                  <v-btn href="#work" class="mt-15"  icon>
+                    <v-icon x-large>mdi-chevron-down</v-icon>
 
+                  </v-btn>
+                </v-row>
                 <!-- TODO: Show user they can scroll down somehow -->
-                <!-- TODO: resize images so they load quicker -->
+
             </v-container>
           </v-col>
         </v-row>
@@ -61,6 +67,7 @@
 export default {
   async asyncData({ $content }) {
     const websites = await $content("", {deep: true}).where({dir: "/websites"}).sortBy("createdAt", "asc").fetch();
+    console.log(websites);
     return { websites };
   },
   data() {
@@ -78,10 +85,10 @@ export default {
     }
   },
   mounted() {
-    var factor = 0.9;
-    this.screenHeight = screen.height * factor;
+    var factor = 1;
+    this.screenHeight = screen.availHeight * factor;
     window.onresize = () => {
-      this.screenHeight = screen.height * factor;
+      this.screenHeight = screen.availHeight * factor;
     };
   },
   components: {
