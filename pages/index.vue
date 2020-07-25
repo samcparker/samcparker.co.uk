@@ -20,14 +20,10 @@
                   </v-col>
                 </v-row>
                 <v-row justify="center">
-                  <!-- <p>Scroll Down</p> -->
                   <v-btn href="#work" class="mt-15"  icon>
                     <v-icon x-large>mdi-chevron-down</v-icon>
-
                   </v-btn>
                 </v-row>
-                <!-- TODO: Show user they can scroll down somehow -->
-
             </v-container>
           </v-col>
         </v-row>
@@ -47,7 +43,7 @@
     <section id="contact">
       <v-container class="py-15" style="max-width: 1200px; ">
         <h2>Contact Me</h2>
-        <p class="mb-10">Want a website or looking to hire? I would love to hear from you.</p>
+        <p class="mb-10">Want a website or looking to hire? Get in touch:</p>
         <contact-form class="px-5" />
       </v-container>
     </section>
@@ -67,7 +63,6 @@
 export default {
   async asyncData({ $content }) {
     const websites = await $content("", {deep: true}).where({dir: "/websites"}).sortBy("createdAt", "asc").fetch();
-    console.log(websites);
     return { websites };
   },
   data() {

@@ -20,11 +20,13 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
+      { name: "google-site-verification", content: "Srck8dJPVtKsYdt0KvKxnmSoSmgyd4_fqLXnldp_bmo"}
+
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', async: true},
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&display=swap', async: true},
     ]
   },
   /*
