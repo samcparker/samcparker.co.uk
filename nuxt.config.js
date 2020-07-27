@@ -21,7 +21,7 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { name: "google-site-verification", content: "Srck8dJPVtKsYdt0KvKxnmSoSmgyd4_fqLXnldp_bmo"},
-      { name: 'keywords', content: 'university of kent, website, websites, ukc, sam parker, sam c parker'},
+      { name: 'keywords', content: 'university of kent, website, websites, ukc, sam parker, sam c parker, leicester'},
       { hid: 'description', name: 'description', content: 'I take great ideas and turn them into functional websites. University of Kent student studying Computer Science. samcparker@protonmail.com'}
     ],
     link: [
