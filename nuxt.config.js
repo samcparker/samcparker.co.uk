@@ -20,9 +20,9 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' },
-      { name: "google-site-verification", content: "Srck8dJPVtKsYdt0KvKxnmSoSmgyd4_fqLXnldp_bmo"}
-
+      { name: "google-site-verification", content: "Srck8dJPVtKsYdt0KvKxnmSoSmgyd4_fqLXnldp_bmo"},
+      { name: 'keywords', content: 'university of kent, website, websites, ukc, sam parker, sam c parker'},
+      { hid: 'description', name: 'description', content: 'I take great ideas and turn them into functional websites. University of Kent student studying Computer Science. samcparker@protonmail.com'}
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico', async: true},
